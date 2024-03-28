@@ -1,10 +1,8 @@
-# LINE_AutoLock_FastAPI
+# HomeVisitLINEBot
 
 ![](images/Screenshot29.png)
 
-# Setup Guide
-
-## Configuration
+## Setup
 
 1. **FFT intercom**: Edit `fft_detection_config.json` in the fft directory:
 
@@ -27,7 +25,7 @@
    LINE_NOTIFY_TOKEN=<Your_LINE_Notify_Token>
    ```
 
-## Installation and Execution
+3. Installation and Execution
 
 ```bash
 # Update system and install dependencies
