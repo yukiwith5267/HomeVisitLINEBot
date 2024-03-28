@@ -1,0 +1,5 @@
+.env
+venv/
+config/serviceAccountKey.json
+__pycache__
+controllers/__pycache__
