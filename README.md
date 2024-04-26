@@ -1,5 +1,5 @@
 # HomeVisitLINEBot
-This repository is an updated project developed in JPHACKS.
+This repository is an updated project developed in [JPHACKS](https://github.com/jphacks/TK_2302).
 
 ## Overview
 Intercom control with servo motors and speaker using Raspi via lineAPI.
