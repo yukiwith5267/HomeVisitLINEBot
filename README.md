@@ -34,7 +34,7 @@ SWITCHBOT_AUTH_TOKEN=<Your_SwitchBot_Auth_Token>
 LINE_NOTIFY_TOKEN=<Your_LINE_Notify_Token>
 ```
 
-## Run main.py and notify.py in tmuxProcedure at raspi
+## Run main.py and notify.py in tmux
 
 ```bash
 # Update system and install dependencies
