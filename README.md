@@ -6,6 +6,7 @@ Intercom control with servo motors and speaker using Raspi via lineAPI.
 
 ### Divice
 - RaspberryPi4
+- [Logicool HD720P](https://www.amazon.co.jp/gp/product/B07QMKND9M/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&th=1)
 - [HM05-5007](https://www.amazon.co.jp/gp/product/B09BN9N1P3/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)
 - [HS-MC09UBK](https://www.amazon.co.jp/gp/product/B0B4NMT31T/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - servo motor
