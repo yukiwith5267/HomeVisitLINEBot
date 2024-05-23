@@ -1,4 +1,4 @@
-# home_visit_linebot
+# raspi_intercom_control
 This repository is an updated project developed in [JPHACKS](https://github.com/jphacks/TK_2302).
 
 ## Overview
