@@ -1,4 +1,4 @@
-# HomeVisitLINEBot
+# home_visit_linebot
 This repository is an updated project developed in [JPHACKS](https://github.com/jphacks/TK_2302).
 
 ## Overview
