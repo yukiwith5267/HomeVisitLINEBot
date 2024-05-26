@@ -20,11 +20,10 @@ Intercom control with servo motors and speaker using Raspi via lineAPI.
 - cloudflare(or ngrok)
 
 ## How to use this rep
-1. Please fft the intercom sound.[How to fft the intercom](https://github.com/yukiwith5267/Linebot-Unlocker/tree/main/fft)
 
-2. Create a LINE Bot and obtain the `LINE USER ID`, `Channel Secret token` and `Access token`.
-Also, you will need the `LINEnotify token` and the `OPENAI` api key.
-The `Switch bot api` is optional. (It remotely controls electricity.)
+1. First, you need to capture the intercom sound via the microphone connected to the Raspi and FFT analyze it. [FFT procedure for intercom sound](https://github.com/yukiwith5267/Linebot-Unlocker/tree/main/fft)
+
+2. Set Environment Variables
 
 ```.env
 LINE_CHANNEL_SECRET_TOKEN=<Your_LINE_Channel_Secret_Token>
@@ -34,8 +33,9 @@ LINE_USER_ID=<Your_LINE_User_ID>
 SWITCHBOT_AUTH_TOKEN=<Your_SwitchBot_Auth_Token>
 LINE_NOTIFY_TOKEN=<Your_LINE_Notify_Token>
 ```
+* The `Switch bot api` is optional. (It remotely controls electricity.)
 
-## Run main.py and notify.py in tmux
+3. Run main.py and notify.py
 
 ```bash
 # Update system and install dependencies
@@ -56,7 +56,8 @@ tmux new-session -d -s mySession 'source env/bin/activate; python notify.py'
 tmux new-window 'source env/bin/activate; sudo pigpiod; uvicorn main:app --host 0.0.0.0 --port 8000 --reload'
 ```
 
-## How to publish the localhost of the Raspi to the Internet
+4. Publish main.py on the Internet
+
 There are two ways to publish localhost to the Internet: using ngrok and using cloudflare.
 
 **Using ngrok:**
@@ -74,10 +75,10 @@ With ngrok, you cannot specify a custom domain.
 Also note that the url will be changed each time you launch ngrok.
 
 **Using Cloudflare Tunnel:**
-First, you need to get a domain name using a service such as [Squarespace](https://domains.squarespace.com/). This usually costs a fee.
+Get a domain name using a service such as [Squarespace](https://domains.squarespace.com/). This usually costs a fee.
 Configure the DNS servers to cloudflare for the domain that you have gained.
 
-## Sets the webhook url 
+5. Sets LINE bot webhook url 
 Set the webhookurl of the LINE bot to the url you obtained.
 You must add `/callback` to the end of the url statement.
 
